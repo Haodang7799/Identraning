@@ -1,0 +1,8 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using IdenTranning.Models;
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<div class="sb-sidenav-footer">
+    <div class="small">Logged in as: @UserManager.GetUserName(User)</div>
+    Start Bootstrap
+</div>
